@@ -1,0 +1,21 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    {% extends 'base.html' %}
+    {% block content %}
+    <h2>{{ blog.title }}</h2>
+    <p>{{ blog.date|date:"F jS Y" }}</p>
+    <p>{{ blog.description | safe }}</p>
+     {% endblock %}
+</div>
+
+</body>
+</html>
